@@ -2,20 +2,45 @@
 ## AIM :
 To write a PYTHON program for socket for HTTP for web page upload and download
 ## Algorithm
+1. Start the program.
 
-1.Start the program.
-<BR>
-2.Get the frame size from the user
-<BR>
-3.To create the frame based on the user request.
-<BR>
-4.To send frames to server from the client side.
-<BR>
-5.If your frames reach the server it will send ACK signal to client otherwise it will send NACK signal to client.
-<BR>
-6.Stop the program
-<BR>
+2. Create a socket using socket library.
+
+3. Bind the server to localhost and port 8080.
+
+4. Put the server in listening mode.
+
+5. Accept the client connection request.
+
+6. Receive HTTP request from the client.
+
+7. Check whether the request is GET or POST.
+
+8. If GET, read the webpage file and send it to the client.
+
+9. If POST, receive uploaded data and store it in a file.
+
+10. Send HTTP response message to the client.
+
+11. Close the client connection.
+
+12. Stop the program.
+
+
+
 ## PROGRAMM
+Index.html
+```
+<title>
+    <head>
+        <title>index-html-server</title>
+
+    </head>
+    <body>
+        <h1>hello from-python-socket-server</h1>
+    </body>
+</title>
+```
 Server.py
 ```
 Httpserver
@@ -84,8 +109,10 @@ else:
 
 s.close()
 ```
-## OUTPUT
-<img width="948" height="511" alt="Screenshot 2026-03-11 111345" src="https://github.com/user-attachments/assets/14d7716a-3041-45c8-af91-8bd0cfe95840" />
+## UPLOAD.TXT
+<img width="782" height="76" alt="Screenshot 2026-03-11 114351" src="https://github.com/user-attachments/assets/aca5f6a4-0f51-4dc5-857f-a19e7af78757" />
 
+## OUTPUT
+<img width="1103" height="545" alt="Screenshot 2026-03-11 114331" src="https://github.com/user-attachments/assets/7716cccc-8173-46e4-8ffa-dad903e61dfb" />
 ## Result
 Thus the socket for HTTP for web page upload and download created and Executed
